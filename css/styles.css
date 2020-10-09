@@ -29,7 +29,7 @@ h1 {
 .flexbox-container {
   background-color: lightcoral;
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .flexbox-item {
@@ -41,12 +41,13 @@ h1 {
 
 .item-1 {
   min-height: 100px;
-  flex: 2 0 0;
+  flex-grow: 2;
+  flex-basis: 0;
 }
 
 .item-2 {
   min-height: 200px;
-  flex: 0 0 0;
+  flex-shrink: 0;
 }
 
 .item-3 {
